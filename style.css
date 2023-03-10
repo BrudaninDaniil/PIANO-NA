@@ -10,6 +10,13 @@ body {
     /* background-image: url(/PIANO-NA/AUDIO-L/DO#.mp3); */
 }
 
+p {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 13px;
+    padding: 5px;
+
+}
+
 .frame {
     background-color: rgb(207, 194, 132);
     box-shadow: 0px 0px 50px 2px rgb(207, 194, 132);
@@ -70,9 +77,28 @@ body {
     z-index: 2;
 }
 
-/* .white:hover {
-    background-color: rgb(207, 207, 207);
+.box-plugins {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 35px;
+    gap: 10px;
 }
-.black:hover {
-    background-color: rgb(65, 65, 65);
-} */
+
+.velocity {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0px 0px 10px 1px red;
+    cursor: pointer;
+} 
+
+.reverb {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 0px 0px 10px 1px blue;
+    cursor: pointer;
+} 
