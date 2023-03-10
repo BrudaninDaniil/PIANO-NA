@@ -1,3 +1,4 @@
+
 const key = document.querySelectorAll('.key') ;
 const white = document.querySelectorAll('.white') ;
 const black = document.querySelectorAll('.black') ;
@@ -42,10 +43,10 @@ const bNoteS = new Audio('/PIANO-NA/AUDIO-S/B.mp3') ;
 
 const btnVelocity = document.querySelector('.velocity')
 const btnReverb = document.querySelector('.reverb')
+console.log(btnVelocity.style);
 
 btnReverb.style.backgroundColor = 'blue'
 btnVelocity.style.backgroundColor = 'red'
-console.log(btnVelocity.style.backgroundColor);
 
 function btnPluginsColors (a) {
     return a.style.backgroundColor == 'red' || a.style.backgroundColor == 'blue'  ? true : false ;
@@ -86,128 +87,122 @@ black.forEach(e => {
     })
 })
 
-
-if (btnVelocity.style.backgroundColor == 'red') {
-    Do.addEventListener('click', () => {
-        doNote.play()
-        doNote.currentTime = 0;
-    })
-    
-    DoDies.addEventListener('click', () => {
-        DoDiesNote.play()
-        DoDiesNote.currentTime = 0;
-    })
-    
-    Re.addEventListener('click', () => {
-        ReNote.play()
-        ReNote.currentTime = 0;
-    })
-    
-    ReDies.addEventListener('click', () => {
-        ReDiesNote.play()
-        ReDiesNote.currentTime = 0;
-    })
-    
-    E.addEventListener('click', () => {
-        eNote.play()
-        eNote.currentTime = 0;
-    })
-    
-    F.addEventListener('click', () => {
-        fNote.play()
-        fNote.currentTime = 0;
-    })
-    
-    Fdies.addEventListener('click', () => {
-        fDiesNote.play()
-        fDiesNote.currentTime = 0;
-    })
-    
-    G.addEventListener('click', () => {
-        gNote.play()
-        gNote.currentTime = 0;
-    })
-    
-    Gdies.addEventListener('click', () => {
-        gDiesNote.play()
-        gDiesNote.currentTime = 0;
-    })
-    
-    A.addEventListener('click', () => {
-        aNote.play()
-        aNote.currentTime = 0;
-    })
-    
-    Adies.addEventListener('click', () => {
-        aDiesNote.play()
-        aDiesNote.currentTime = 0;
-    })
-    
-    B.addEventListener('click', () => {
-        bNote.play()
-        bNote.currentTime = 0;
-    })
-} 
-
-if (btnVelocity.style.backgroundColor = 'black') {
-    Do.addEventListener('click', () => {
+Do.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         doNoteS.play()
         doNoteS.currentTime = 0;
-    })
-    
-    DoDies.addEventListener('click', () => {
+    } else {
+        doNote.play()
+        doNote.currentTime = 0;
+    }
+})
+
+DoDies.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         DoDiesNoteS.play()
         DoDiesNoteS.currentTime = 0;
-    })
-    
-    Re.addEventListener('click', () => {
+    } else {
+        DoDiesNote.play()
+        DoDiesNote.currentTime = 0;
+    }
+})
+
+Re.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         ReNoteS.play()
         ReNoteS.currentTime = 0;
-    })
-    
-    ReDies.addEventListener('click', () => {
+    } else {
+        ReNote.play()
+        ReNote.currentTime = 0;
+    }  
+})
+
+ReDies.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         ReDiesNoteS.play()
         ReDiesNoteS.currentTime = 0;
-    })
-    
-    E.addEventListener('click', () => {
+    } else {
+        ReDiesNote.play()
+        ReDiesNote.currentTime = 0;
+    }
+})
+
+E.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         eNoteS.play()
         eNoteS.currentTime = 0;
-    })
-    
-    F.addEventListener('click', () => {
+    } else {
+        eNote.play()
+        eNote.currentTime = 0;
+    }
+})
+
+F.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         fNoteS.play()
         fNoteS.currentTime = 0;
-    })
-    
-    Fdies.addEventListener('click', () => {
+    } else {
+        fNote.play()
+        fNote.currentTime = 0;
+    }
+})
+
+Fdies.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         fDiesNoteS.play()
         fDiesNoteS.currentTime = 0;
-    })
-    
-    G.addEventListener('click', () => {
+    } else {
+        fDiesNote.play()
+        fDiesNote.currentTime = 0;
+    }
+})
+
+G.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         gNoteS.play()
         gNoteS.currentTime = 0;
-    })
-    
-    Gdies.addEventListener('click', () => {
+    } else {
+        gNote.play()
+        gNote.currentTime = 0;
+    }
+})
+
+Gdies.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         gDiesNoteS.play()
         gDiesNoteS.currentTime = 0;
-    })
-    
-    A.addEventListener('click', () => {
+    } else {
+        gDiesNote.play()
+        gDiesNote.currentTime = 0;
+    }
+})
+
+A.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         aNoteS.play()
         aNoteS.currentTime = 0;
-    })
-    
-    Adies.addEventListener('click', () => {
+    } else {
+        aNote.play()
+        aNote.currentTime = 0;
+    }
+})
+
+Adies.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         aDiesNoteS.play()
         aDiesNoteS.currentTime = 0;
-    })
-    
-    B.addEventListener('click', () => {
+    } else {
+        aDiesNote.play()
+        aDiesNote.currentTime = 0;
+    }
+})
+
+B.addEventListener('click', () => {
+    if (btnPluginsColors(btnVelocity)) {
         bNoteS.play()
         bNoteS.currentTime = 0;
-    })
-}
-
+    } else {
+        bNote.play()
+        bNote.currentTime = 0;
+    }    
+})
