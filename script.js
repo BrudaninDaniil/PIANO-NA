@@ -52,7 +52,7 @@ function btnPluginsColors (a) {
     return a.style.backgroundColor == 'red' || a.style.backgroundColor == 'blue'  ? true : false ;
 }
 
-btnVelocity.addEventListener('click', () => {
+btnVelocity.addEventListener('mousedown', () => {
     if (btnPluginsColors (btnVelocity)) {
         btnVelocity.style.backgroundColor = 'black' ;
     } else {
@@ -61,7 +61,7 @@ btnVelocity.addEventListener('click', () => {
     console.log(btnVelocity.style.backgroundColor);
 })
 
-btnReverb.addEventListener('click', () => {
+btnReverb.addEventListener('mousedown', () => {
     if (btnPluginsColors (btnReverb)) {
         btnReverb.style.backgroundColor = 'black' ;
     } else {
@@ -70,7 +70,7 @@ btnReverb.addEventListener('click', () => {
 })
 
 white.forEach(e => {
-    e.addEventListener('click', () => {
+    e.addEventListener('mousedown', () => {
         e.style.backgroundColor = 'rgb(250, 150, 245)'
         setTimeout(()=> {
             e.style.backgroundColor = 'white'
@@ -79,7 +79,7 @@ white.forEach(e => {
 } )
 
 black.forEach(e => {
-    e.addEventListener('click', () => {
+    e.addEventListener('mousedown', () => {
         e.style.backgroundColor = 'rgb(250, 150, 245)'
         setTimeout(()=> {
             e.style.backgroundColor = 'black'
@@ -87,7 +87,31 @@ black.forEach(e => {
     })
 })
 
-Do.addEventListener('click', () => {
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'c') {
+        if (btnPluginsColors(btnVelocity)) {
+            doNoteS.play()
+            doNoteS.currentTime = 0;
+        } else {
+            doNote.play()
+            doNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'f') {
+        if (btnPluginsColors(btnVelocity)) {
+            DoDiesNoteS.play()
+            DoDiesNoteS.currentTime = 0;
+        } else {
+            DoDiesNote.play()
+            DoDiesNote.currentTime = 0;
+        }
+    }
+})
+
+Do.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         doNoteS.play()
         doNoteS.currentTime = 0;
@@ -97,7 +121,7 @@ Do.addEventListener('click', () => {
     }
 })
 
-DoDies.addEventListener('click', () => {
+DoDies.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         DoDiesNoteS.play()
         DoDiesNoteS.currentTime = 0;
@@ -107,7 +131,7 @@ DoDies.addEventListener('click', () => {
     }
 })
 
-Re.addEventListener('click', () => {
+Re.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         ReNoteS.play()
         ReNoteS.currentTime = 0;
@@ -117,7 +141,7 @@ Re.addEventListener('click', () => {
     }  
 })
 
-ReDies.addEventListener('click', () => {
+ReDies.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         ReDiesNoteS.play()
         ReDiesNoteS.currentTime = 0;
@@ -127,7 +151,7 @@ ReDies.addEventListener('click', () => {
     }
 })
 
-E.addEventListener('click', () => {
+E.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         eNoteS.play()
         eNoteS.currentTime = 0;
@@ -137,7 +161,7 @@ E.addEventListener('click', () => {
     }
 })
 
-F.addEventListener('click', () => {
+F.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         fNoteS.play()
         fNoteS.currentTime = 0;
@@ -147,7 +171,7 @@ F.addEventListener('click', () => {
     }
 })
 
-Fdies.addEventListener('click', () => {
+Fdies.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         fDiesNoteS.play()
         fDiesNoteS.currentTime = 0;
@@ -157,7 +181,7 @@ Fdies.addEventListener('click', () => {
     }
 })
 
-G.addEventListener('click', () => {
+G.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         gNoteS.play()
         gNoteS.currentTime = 0;
@@ -167,7 +191,7 @@ G.addEventListener('click', () => {
     }
 })
 
-Gdies.addEventListener('click', () => {
+Gdies.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         gDiesNoteS.play()
         gDiesNoteS.currentTime = 0;
@@ -177,7 +201,7 @@ Gdies.addEventListener('click', () => {
     }
 })
 
-A.addEventListener('click', () => {
+A.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         aNoteS.play()
         aNoteS.currentTime = 0;
@@ -187,7 +211,7 @@ A.addEventListener('click', () => {
     }
 })
 
-Adies.addEventListener('click', () => {
+Adies.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         aDiesNoteS.play()
         aDiesNoteS.currentTime = 0;
@@ -197,7 +221,7 @@ Adies.addEventListener('click', () => {
     }
 })
 
-B.addEventListener('click', () => {
+B.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
         bNoteS.play()
         bNoteS.currentTime = 0;
