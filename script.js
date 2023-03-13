@@ -78,6 +78,7 @@ white.forEach(e => {
     })
 } )
 
+
 black.forEach(e => {
     e.addEventListener('mousedown', () => {
         e.style.backgroundColor = 'rgb(250, 150, 245)'
@@ -110,6 +111,31 @@ document.addEventListener('keydown', (e)=> {
         }
     }
 })
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'v') {
+        if (btnPluginsColors(btnVelocity)) {
+            ReNoteS.play()
+            ReNoteS.currentTime = 0;
+        } else {
+            ReNote.play()
+            ReNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'g') {
+        if (btnPluginsColors(btnVelocity)) {
+            ReDiesNoteS.play()
+            ReDiesNoteS.currentTime = 0;
+        } else {
+            ReDiesNote.play()
+            ReDiesNote.currentTime = 0;
+        }
+    }
+})
+
 
 Do.addEventListener('mousedown', () => {
     if (btnPluginsColors(btnVelocity)) {
