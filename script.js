@@ -97,6 +97,9 @@ document.addEventListener('keydown', (e)=> {
         if (btnPluginsColors(btnVelocity)) {
             doNoteS.play()
             doNoteS.currentTime = 0;
+            setTimeout(() => {
+                
+            })
         } else {
             doNote.play()
             doNote.currentTime = 0;
@@ -154,12 +157,129 @@ document.addEventListener('keydown', (e)=> {
 
 document.addEventListener('keydown', (e)=> {
     if (e.key === 'b') {
+        E.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            E.style.backgroundColor = 'white'
+        }, 100)
         if (btnPluginsColors(btnVelocity)) {
             eNoteS.play()
             eNoteS.currentTime = 0;
         } else {
             eNote.play()
             eNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'n') {
+        F.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            F.style.backgroundColor = 'white'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            fNoteS.play()
+            fNoteS.currentTime = 0;
+        } else {
+            fNote.play()
+            fNote.currentTime = 0;
+        }
+    }
+})
+
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'j') {
+        Fdies.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            Fdies.style.backgroundColor = 'black'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            fDiesNoteS.play()
+            fDiesNoteS.currentTime = 0;
+        } else {
+            fDiesNote.play()
+            fDiesNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'm') {
+        G.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            G.style.backgroundColor = 'white'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            gNoteS.play()
+            gNoteS.currentTime = 0;
+        } else {
+            gNote.play()
+            gNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'k') {
+        Gdies.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            Gdies.style.backgroundColor = 'black'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            gDiesNoteS.play()
+            gDiesNoteS.currentTime = 0;
+        } else {
+            gDiesNote.play()
+            gDiesNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === ',') {
+        A.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            A.style.backgroundColor = 'white'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            aNoteS.play()
+            aNoteS.currentTime = 0;
+        } else {
+            aNote.play()
+            aNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'l') {
+        Adies.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            Adies.style.backgroundColor = 'black'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            aDiesNoteS.play()
+            aDiesNoteS.currentTime = 0;
+        } else {
+            aDiesNote.play()
+            aDiesNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === '.') {
+        B.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            B.style.backgroundColor = 'white'
+        }, 100)
+        if (btnPluginsColors(btnVelocity)) {
+            bNoteS.play()
+            bNoteS.currentTime = 0;
+        } else {
+            bNote.play()
+            bNote.currentTime = 0;
         }
     }
 })
