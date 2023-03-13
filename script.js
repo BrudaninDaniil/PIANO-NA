@@ -90,6 +90,10 @@ black.forEach(e => {
 
 document.addEventListener('keydown', (e)=> {
     if (e.key === 'c') {
+        Do.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            Do.style.backgroundColor = 'white'
+        }, 100)
         if (btnPluginsColors(btnVelocity)) {
             doNoteS.play()
             doNoteS.currentTime = 0;
@@ -102,6 +106,10 @@ document.addEventListener('keydown', (e)=> {
 
 document.addEventListener('keydown', (e)=> {
     if (e.key === 'f') {
+        DoDies.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            DoDies.style.backgroundColor = 'black'
+        }, 100)
         if (btnPluginsColors(btnVelocity)) {
             DoDiesNoteS.play()
             DoDiesNoteS.currentTime = 0;
@@ -114,6 +122,10 @@ document.addEventListener('keydown', (e)=> {
 
 document.addEventListener('keydown', (e)=> {
     if (e.key === 'v') {
+        Re.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            Re.style.backgroundColor = 'white'
+        }, 100)
         if (btnPluginsColors(btnVelocity)) {
             ReNoteS.play()
             ReNoteS.currentTime = 0;
@@ -126,12 +138,28 @@ document.addEventListener('keydown', (e)=> {
 
 document.addEventListener('keydown', (e)=> {
     if (e.key === 'g') {
+        ReDies.style.backgroundColor = 'rgb(250, 150, 245)'
+        setTimeout(()=> {
+            ReDies.style.backgroundColor = 'black'
+        }, 100)
         if (btnPluginsColors(btnVelocity)) {
             ReDiesNoteS.play()
             ReDiesNoteS.currentTime = 0;
         } else {
             ReDiesNote.play()
             ReDiesNote.currentTime = 0;
+        }
+    }
+})
+
+document.addEventListener('keydown', (e)=> {
+    if (e.key === 'b') {
+        if (btnPluginsColors(btnVelocity)) {
+            eNoteS.play()
+            eNoteS.currentTime = 0;
+        } else {
+            eNote.play()
+            eNote.currentTime = 0;
         }
     }
 })
