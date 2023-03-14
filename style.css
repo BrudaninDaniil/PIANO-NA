@@ -23,7 +23,7 @@ p {
     margin: 250px auto;
     width: 700px;
     height: 400px;
-    border: 2px solid rgb(197, 183, 123);
+    border: 2px solid rgb(197, 182, 123);
     border-radius: 40px;
     display: grid;
     grid-template-columns: 1fr;
